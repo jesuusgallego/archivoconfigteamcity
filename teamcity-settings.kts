@@ -4,7 +4,7 @@ version = "2023.2"
 
 project {
     name = "LocalPythonProject"
-    id("LocalPythonProject") // El ID del proyecto principal
+    id("LocalPythonProject")
 
     buildType(LocalPythonProject_RunHelloWorldScript)
     vcsRoot(LocalPythonProject_HttpsGithubComJesuusgallegoArchivoconfigteamcityGitRefsHeadsMain)
@@ -12,7 +12,7 @@ project {
 
 object LocalPythonProject_RunHelloWorldScript : BuildType({
     name = "Run Hello World Script"
-    id("LocalPythonProject_RunHelloWorldScript") // ID con el prefijo del proyecto
+    id("LocalPythonProject_RunHelloWorldScript")
 
     steps {
         script {
@@ -30,12 +30,12 @@ object LocalPythonProject_RunHelloWorldScript : BuildType({
 
 object LocalPythonProject_HttpsGithubComJesuusgallegoArchivoconfigteamcityGitRefsHeadsMain : GitVcsRoot({
     name = "GitHub Repo"
-    id("LocalPythonProject_HttpsGithubComJesuusgallegoArchivoconfigteamcityGitRefsHeadsMain") // ID con el prefijo del proyecto
+    id("LocalPythonProject_HttpsGithubComJesuusgallegoArchivoconfigteamcityGitRefsHeadsMain")
 
     url = "https://github.com/jesuusgallego/archivoconfigteamcity.git"
     branch = "refs/heads/main"
     authMethod = password {
-        userName = "your-username"
-        password = "your-password"
+        userName = "jesuusgallego"
+        password = "11032002116j"
     }
 })
